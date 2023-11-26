@@ -9,10 +9,10 @@ Following along what has been posted by @cbh123 in his repo: https://github.com/
 3. Open generated file up in Quicktime
 
 Terminal Instructions
-## add personal keys
-export OPENAI_API_KEY=“<your key>”
-export ELEVEN_API_KEY=“<your key>”
-export ELEVENLABS_VOICE_ID=“<your morgan freeman voice key>”
+# Add personal keys
+export OPENAI_API_KEY=“ <your key> ”
+export ELEVEN_API_KEY=“ <your key> ”
+export ELEVENLABS_VOICE_ID=“ <your morgan freeman voice key> ”
 
 # Morgan Freeman folder
 cd /Users/noah_/Documents/Development/PersonalProjects/narrator_morgan/
@@ -24,6 +24,8 @@ pip install -r requirements.txt
 export PYTHONPATH=$PWD/venv/lib/python3.11/site-packages
 
 # Run scripts in separate Terminal
+## Command 1
 python capture.py
 
+## Command 2
 python narrator.py
