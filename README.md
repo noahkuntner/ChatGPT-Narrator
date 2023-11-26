@@ -1,31 +1,45 @@
-# Morgan Freeman - ChatGPT-Narrator
+# David Attenborough narrates your life. 
 
+https://twitter.com/charliebholtz/status/1724815159590293764
 
-Following along what has been posted by @cbh123 in his repo: https://github.com/cbh123/narrator
+## Want to make your own AI app?
+Check out [Replicate](https://replicate.com). We make it easy to run machine learning models with an API.
 
-- Main changes:
-1. Produced Morgan Freeman voice in Elevenlabs
-2. Change prompt to reflect a more direct view from Morgan Freeman
-3. Open generated file up in Quicktime
+## Setup
 
-Terminal Instructions
-# Add personal keys
-export OPENAI_API_KEY=“ <your key> ”
-export ELEVEN_API_KEY=“ <your key> ”
-export ELEVENLABS_VOICE_ID=“ <your morgan freeman voice key> ”
+Clone this repo, and setup and activate a virtualenv:
 
-# Morgan Freeman folder
-cd /Users/noah_/Documents/Development/PersonalProjects/narrator_morgan/
-
+```bash
+python3 -m pip install virtualenv
+python3 -m virtualenv venv
 source venv/bin/activate
-pip install -r requirements.txt
+```
 
-# Circumvent packaging issues
-export PYTHONPATH=$PWD/venv/lib/python3.11/site-packages
+Then, install the dependencies:
+`pip install -r requirements.txt`
 
-# Run scripts in separate Terminal
-## Command 1
+Make a [Replicate](https://replicate.com), [OpenAI](https://beta.openai.com/), and [ElevenLabs](https://elevenlabs.io) account and set your tokens:
+
+```
+export OPENAI_API_KEY=<token>
+export ELEVENLABS_API_KEY=<eleven-token>
+```
+
+Make a new voice in Eleven and get the voice id of that voice using their [get voices](https://elevenlabs.io/docs/api-reference/voices) API, or by clicking the flask icon next to the voice in the VoiceLab tab.
+
+```
+export ELEVENLABS_VOICE_ID=<voice-id>
+```
+
+## Run it!
+
+In on terminal, run the webcam capture:
+```bash
 python capture.py
+```
+In another terminal, run the narrator:
 
-## Command 2
+```bash
 python narrator.py
+```
+
