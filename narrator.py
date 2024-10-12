@@ -31,6 +31,7 @@ def encode_image(image_path):
 
 
 def play_audio(text):
+    # Voice in ElevenLabs -> personally generated
     audio = generate(text, voice="q7lZ63jPhYTOL2rU2Auh")
 
     # Create a unique directory for each audio file
