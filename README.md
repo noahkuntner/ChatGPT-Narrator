@@ -1,7 +1,13 @@
 # Morgan Freeman narrates Life
 
-Forked from David Attenborough narrates your life. ->
+Inspired by the David Attenborough narrates your life implementation. ->
 https://twitter.com/charliebholtz/status/1724815159590293764
+
+# Example of desired output:
+![image](https://github.com/user-attachments/assets/890246c7-bf0b-4032-bf25-c97d07e9cfdd)
+
+- ChatGPT-4 generates script based on what is being seen.
+- ElevenLabs cloned voice is used.
 
 ## Setup -> 
 
